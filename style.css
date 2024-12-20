@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.section1{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 900px;
+    margin: 0px 0px 16px;
+    padding: 80px 150px 0px;
+    display: flex;
+    color: white        ;
+    flex-direction: column;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(180deg,#e5e5e500,#171717);
+}
+nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    position: absolute;
+    top: 0;
+    background-color: #171717;
+    background: none;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.menu a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    font-size: 13px;
+}
+.ibc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.ibc:hover{
+    gap: 8px;
+}
+.ibc:hover a{
+    color: lightgrey;
+}
+.ibc:hover svg{
+    fill: lightgrey;
+}
+.ibc a{
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+}
+.ibc>svg{
+    align-self: end;
+}
+.heading{
+    height: auto;
+    width: auto;
+}
+.heading>h1{
+    font-size: 115px;
+    font-weight: 800;
+    margin: 70px 0px 0px;
+    background: linear-gradient(-25deg, hsla(0, 0%, 100%, 0) 56%, #fff 98%), linear-gradient(177deg, #c6d1ff 40%, #fff 60%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 120px;
+    letter-spacing: -3px;
+}
+.section1>p{
+    height: 98px;
+    width: 700px;
+    margin: 130px 0px 0px;
+    font-size: 22px;
+    font-weight: 300;
+}
+.double-btn{
+    margin: 90px 0px 0px;
+    height: 70px;
+    width: 500px;
+    display: flex;
+}
+.btn1{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    gap: 10px;
+    border-radius: 10px;
+}
+.btn1 a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.btn1>svg{
+    position: relative;
+    bottom: -2px;
+}
+.btn1:hover{
+    position: relative;
+    bottom: 2px;
+}
+.btn1:hover svg{
+    bottom: 1px;
+    left: 2px;
+}
+.double-btn>div{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.double-btn>div a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    margin-left: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.double-btn>div svg{
+    position: relative;
+    bottom: -2px;
+}
+.double-btn>div:hover{
+    gap: 12px;
+    color: lightgray;
+    fill: lightgray;
+}
+
+
+.animate{
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    background-color: #171717;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+.animation{
+    width: 200%;
+    height: 120px;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    animation-name: move;
+    animation-timing-function: linear;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+.animation:hover{
+    animation-play-state: paused;
+}
+@keyframes move{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-78.5%);
+    }
+    
+}
+.companies{
+    height: 70px;
+    width: 185px;
+    opacity: 50%;
+
+}
+.section2{
+    height: 590px;
+    width: 100%;
+    margin: 110px 0px 0px;
+    padding: 12px 15px 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.scale{
+    margin: 0px 0px 0px 230px;
+    width: 750px;
+    height: 500px;
+}
+.scale h1{
+    font-size: 60px;
+    font-weight: 750;
+}
+.numbers{
+    margin: 30px 0px 0px;
+    width: 518px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 82px;
+    gap: 95px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff80;
+}
+.numbers .one{
+    width: 143px;
+    font-size: 16px;
+}
+.numbers .one h1{
+    font-size: 47px;
+    margin: 6px 0px 0px;
+    color: white;
+}
+.numbers .two{
+    width: 271px;
+}
+.numbers .two h1{
+    font-size: 47px;
+    margin: 6px 0px 0px;
+    color: white;
+}
+
+.scale p{
+    margin: 23px 0px 0px;
+    width: 495px;
+    font-size: 20px;
+}
+.btn2{
+    width: 402px;
+    margin: 44px 0px 0px;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    gap: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn2 a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.btn2>svg{
+    position: relative;
+    bottom: -2px;
+}
+
+.scale-image{
+    width: 550px;
+    height: 500px;
+    margin: 0px 0px 0px 50px;
+}
+.scale-image>svg{
+    position: relative;
+    right: 650px;
+    bottom: 230px;
+}
+.section3{
+    height: 1223px;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 86px 58px;
+}
+.speculation{
+    height: 662px;
+    width: 100%;
+}
+.addition{
+    height: 345px;
+    margin: 44px 0px 0px;
+    width: 100%;
+    justify-content: center;
+    align-items: start;
+    display: grid;
+    grid-template-columns: repeat(2, 530px);
+    column-gap: 30px;
+    
+}
+.grid-items1{
+    margin: 44px 0px 0px;
+    padding: 0px 23px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.grid-items1>svg{
+    fill: #ffffffd1;
+}
+.grid-items1>p{
+    font-size: 21px;
+    margin: 12px 0px 0px;
+    color: #ffffffd1;
+    font-weight: 300;
+}
+.grid-items1>p span{
+    font-weight: 700;
+}
+.section4{
+    height: 1158px;
+    padding: 85px 48px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    position: relative;
+}
+.section4>img{
+    position: relative;
+    z-index: 3;
+    left: 0;
+    height: 1000px;
+    width: 1000px;
+    top: 0;
+    right: 900px;
+
+}
+.smart-contracts-image{
+    width: 608px;
+    height: 600px;
+    position: absolute;
+    left: 75px;
+}
+.smart-contracts-image>svg{
+    position: relative;
+    right: 240px;
+    z-index: 2;
+    bottom: 85px;
+}
+.smart-contracts{
+    position: absolute;
+    right: 0;
+    width: 500px;
+    height: 987px;
+    background: aqua;
+    margin: 0px 0px 0px 270px;
+}
